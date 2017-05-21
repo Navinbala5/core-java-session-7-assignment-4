@@ -1,0 +1,23 @@
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+ class TwentyseventhAssignment {
+    public static void main(String[] args) {
+        Date d = Calendar.getInstance().getTime();
+
+        DateFormat df = new SimpleDateFormat("yyyy/MM/dd");
+        String navin = df.format(d);
+        System.out.println(" "+ navin);
+
+      df = new SimpleDateFormat("yyyy MM dd");
+        navin = df.format(d);
+        System.out.println(" " + navin);
+
+      df = new SimpleDateFormat("yyyy,MM,dd");
+        navin = df.format(d);
+        System.out.println(" " +navin);
+
+    }
+}
